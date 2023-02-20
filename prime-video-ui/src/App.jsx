@@ -1,11 +1,19 @@
-import './App.css';
+import React from 'react'
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import Login from './pages/login'
+import Overview from './pages/Overview'
+import Primevideo from './pages/Primevideo'
+import Signup from './pages/Signup'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      
-    </div>
-  );
+    <Router>
+      <Routes>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/signup" element={<Signup/>}/>
+        <Route path="/overview" element={<Overview/>}/>
+        <Route path="/" element={<Primevideo/>}/>
+      </Routes>
+    </Router>
+  )
 }
-
-export default App;
