@@ -1,4 +1,5 @@
 import React from 'react'
+import './App.css'
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import Login from './pages/login'
 import Overview from './pages/Overview'
