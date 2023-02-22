@@ -8,6 +8,13 @@
 :root{
     --body-bg-color: #222;
     --font-color : #fff;
+    --font-color-dark : #000;
+    --btn-primary-bg-color: #ffd900;
+    --btn-primary-font-color: #000000c7;
+    /* --btn-secondary-bg-color: #ffd900;
+    --btn-secondary-font-color: #000000c7; */
+    --form-border-color : #c5c4c4;
+    --link-font-color : #0000d8;
 }
 
 body {
@@ -16,3 +23,23 @@ body {
   background-color: var(--body-bg-color) !important;
   color: var(--font-color);
 }
+
+.flex {
+    display: flex !important;
+  }
+  
+  .column {
+    flex-direction: column !important;
+  }
+  
+  .j-between {
+    justify-content: space-between !important;
+  }
+  
+  .j-center {
+    justify-content: center !important;
+  }
+  
+  .a-center {
+    align-items: center !important;
+  }
