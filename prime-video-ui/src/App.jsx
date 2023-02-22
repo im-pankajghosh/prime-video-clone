@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
-import Login from './pages/login'
+import Login from './pages/Login'
 import Overview from './pages/Overview'
 import Primevideo from './pages/Primevideo'
 import Signup from './pages/Signup'
