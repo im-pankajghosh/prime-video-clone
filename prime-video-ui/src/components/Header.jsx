@@ -49,4 +49,36 @@ const Container = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 500px) {
+    header {
+      position: relative;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 1rem;
+      .content {
+        top: 40%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        transition: all 0.5s;
+        h1 {
+          font-size: 2rem;
+          line-height: 2.1rem;
+          font-weight: 400;
+        }
+        p {
+          font-size: 1.1rem;
+          line-height: 1.2rem;
+        }
+        button {
+          width: 450px;
+          padding: 0.5rem 0;
+        }
+      }
+    }
+  }
 `;

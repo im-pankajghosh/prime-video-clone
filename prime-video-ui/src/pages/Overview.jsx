@@ -12,17 +12,17 @@ export default function Overview() {
   return (
     <Container>
       <Navbar />
-      {/* <Header>
+      <Header>
         <h1>Welcome to Prime Video</h1>
         <p>
           Watch the latest movies, TV shows, and award-winning Amazon Originals
         </p>
         <Buttoncontrol
           label="Sign in to join"
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/signin")}
         />
       </Header>
-      <Section variant="rent-section">
+      {/* <Section variant="rent-section">
         <h3>Movie rentals on Prime Video</h3>
         <p>Early Access to new movies, before digital subscription</p>
         <Buttoncontrol label="Rent now" onClick={() => navigate("/")} />
@@ -234,5 +234,14 @@ const Container = styled.div`
       left: 0;
       width: 50%;
     }
+  }
+
+  @media screen and (max-width: 500px) {
+    header {
+    background-image: linear-gradient(to top, #000 55%, transparent 80%),
+      url(https://m.media-amazon.com/images/G/31/AmazonVideo/2019/MLP._SX1440_CR575,0,865,675_QL80_AC_FP_.jpg);
+    background-size: 100%;
+    background-position: right top;
+  }
   }
 `;
