@@ -3,43 +3,67 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Noto Sans Khmer", sans-serif;
 }
 
-:root{
-    --body-bg-color: #222;
-    --font-color : #fff;
-    --font-color-dark : #000;
-    --btn-primary-bg-color: #ffd900;
-    --btn-primary-font-color: #000000c7;
-    /* --btn-secondary-bg-color: #ffd900;
-    --btn-secondary-font-color: #000000c7; */
-    --form-border-color : #c5c4c4;
-    --link-font-color : #0000d8;
+:root {
+  --body-bg-color: #222;
+  --font-color: #fff;
+  --font-color-dark: #000;
+  --btn-primary-bg-color: #1783d6;
+  --btn-primary-hover-bg-color: #1c9dff;
+  --btn-primary-font-color: #fff;
+  --btn-secondary-bg-color: #ffd900;
+  --btn-secondary-font-color: #000000c7;
+  --form-border-color: #c5c4c4;
+  --link-font-color: #0000d8;
+  --nav-bg-color: #1b2530;
+  --dropdown-menu-bg-color: #252e39;
+  --dropdown-menu-item-hover-bg-color: #596c8341;
+  --movie-list-bg-color: #0f171e;
+  --movie-card-bg-color : #222b38;
+  --footer-copyright-font-color: #8f8f8f;
 }
 
 body {
-  font-family: "Noto Sans Khmer", sans-serif;
   font-size: 16px;
   background-color: var(--body-bg-color) !important;
   color: var(--font-color);
+  padding-top: 70px;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .flex {
-    display: flex !important;
-  }
-  
-  .column {
-    flex-direction: column !important;
-  }
-  
-  .j-between {
-    justify-content: space-between !important;
-  }
-  
-  .j-center {
-    justify-content: center !important;
-  }
-  
-  .a-center {
-    align-items: center !important;
-  }
+  display: flex !important;
+}
+
+.column {
+  flex-direction: column !important;
+}
+
+.j-between {
+  justify-content: space-between !important;
+}
+
+.j-center {
+  justify-content: center !important;
+}
+
+.a-center {
+  align-items: center !important;
+}
+
+.link {
+  text-decoration: none !important;
+}
+
+.opacity-50 {
+  opacity: 50% !important;
+}
+
+.opacity-100 {
+  opacity: 100% !important;
+}
