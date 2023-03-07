@@ -105,7 +105,7 @@ export default function Signup(props) {
           <hr />
           <p className="form-rule">
             Already have an account? &nbsp;
-            <Link className="link" to="/login">
+            <Link className="link" to="/signin">
               Sign in ▸
             </Link>
           </p>
@@ -135,7 +135,7 @@ const Container = styled.div`
   .form {
     border: 1px solid var(--form-border-color);
     border-radius: 0.3rem;
-    max-width: 300px;
+    max-width: 340px;
     width: fit-content;
     height: fit-content;
     padding: 1.5rem;
@@ -153,12 +153,12 @@ const Container = styled.div`
       padding: 0.4rem;
       font-size: 12px;
       &:focus {
-        border: 1px solid var(--btn-primary-bg-color);
-        box-shadow: 0 0 8px var(--btn-primary-bg-color);
+        border: 1px solid var(--btn-secondary-bg-color);
+        box-shadow: 0 0 8px var(--btn-secondary-bg-color);
       }
     }
     .btn-primary {
-      background-color: var(--btn-primary-bg-color);
+      background-color: var(--btn-secondary-bg-color);
       background-image: linear-gradient(to top, #ffc400, #ffffffab);
       border-color: var(--form-border-color);
       margin-top: 0.4rem;
@@ -167,8 +167,8 @@ const Container = styled.div`
 
     .btn-primary:disabled {
       opacity: 70%;
-      border: 1px solid var(--btn-primary-bg-color);
-      box-shadow: 0 0 8px var(--btn-primary-bg-color);
+      border: 1px solid var(--btn-secondary-bg-color);
+      box-shadow: 0 0 8px var(--btn-secondary-bg-color);
     }
 
     .form-rule {
