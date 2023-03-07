@@ -66,16 +66,16 @@ const Container = styled.div`
         gap: 1rem;
         transition: all 0.5s;
         h1 {
-          font-size: 2rem;
-          line-height: 2.1rem;
+          font-size: 1.9rem;
+          line-height: 2rem;
           font-weight: 400;
         }
         p {
-          font-size: 1.1rem;
-          line-height: 1.2rem;
+          font-size: 0.9rem;
+          line-height: 1rem;
         }
         button {
-          width: 450px;
+          width: 350px;
           padding: 0.5rem 0;
         }
       }
