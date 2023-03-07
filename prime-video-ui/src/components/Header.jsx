@@ -4,7 +4,7 @@ import styled from "styled-components";
 export default function Header(props) {
   return (
     <Container>
-      <header className="flex a-center">
+      <header className="flex">
         <div className="content flex column">{props.children}</div>
       </header>
     </Container>
@@ -13,36 +13,43 @@ export default function Header(props) {
 const Container = styled.div`
   header {
     position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
     min-height: 100vh;
-    width: 100%;
+    height: 100%;
     box-sizing: border-box;
+    justify-content: center;
+    background: linear-gradient(to right, #000 40%, transparent 60%),
+      url(https://m.media-amazon.com/images/G/31/AmazonVideo/2019/MLP.jpg);
+    background-size: cover;
+    background-position: right top;
     background-repeat: no-repeat;
-    padding: 3rem;
+    transition: 0.5s;
     .content {
       position: absolute;
-      top: 20%;
+      top: 10%;
+      left: 0;
+      gap: 1rem;
       width: 50%;
-      gap: 1.5rem;
-      transition: all 0.5s;
+      padding: 3rem;
       h1 {
         font-size: 2.9rem;
         line-height: 3rem;
         font-weight: 300;
       }
       p {
-        font-size: 1.6rem;
-        line-height: 1.8rem;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
         font-weight: 300;
       }
       button {
-        width: 300px;
-        padding: 0.8rem;
-        font-size: 1rem;
         font-weight: 500;
-        border: none;
+        color: #fff;
         background-color: var(--btn-primary-bg-color);
-        color: var(--btn-primary-font-color);
-        transition: 0.1s;
+        border: none;
+        padding: 0.8rem;
+        width: 300px;
         &:hover {
           background-color: var(--btn-primary-hover-bg-color);
         }
@@ -52,31 +59,28 @@ const Container = styled.div`
 
   @media screen and (max-width: 500px) {
     header {
-      position: relative;
-      width: 100%;
-      box-sizing: border-box;
-      padding: 1rem;
+      min-height: 70vh;
+      justify-content: center;
+      background: linear-gradient(to top, #000 60%, transparent 70%),
+        url(https://m.media-amazon.com/images/G/31/AmazonVideo/2019/MLP._SX1440_CR575,0,865,675_QL80_AC_FP_.jpg);
+      background-size: 100%;
       .content {
         top: 40%;
-        left: 0;
-        width: 100%;
         text-align: center;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        transition: all 0.5s;
+        padding: 0.5rem;
+        width: 100%;
         h1 {
-          font-size: 1.9rem;
-          line-height: 2rem;
+          font-size: 1.8rem;
+          line-height: 1.9rem;
           font-weight: 400;
         }
         p {
-          font-size: 0.9rem;
-          line-height: 1rem;
+          font-size: 0.8rem;
+          line-height: 0.9rem;
         }
         button {
-          width: 350px;
-          padding: 0.5rem 0;
+          padding: 0.5rem;
+          width: 100%;
         }
       }
     }
