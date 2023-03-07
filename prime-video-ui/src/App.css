@@ -67,3 +67,9 @@ body {
 .opacity-100 {
   opacity: 100% !important;
 }
+
+@media screen and (max-width:480px){
+  body{
+    padding-top: 50px;
+  }
+}
