@@ -106,7 +106,7 @@ const Container = styled.div`
     background-color: var(--nav-bg-color);
     box-sizing: border-box;
     padding: 1rem 1.5rem;
-    z-index: 3;
+    z-index: 100;
     .nav-left {
       height: 100%;
       .logo {
