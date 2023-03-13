@@ -6,6 +6,9 @@ import Signup from "./pages/Signup";
 import Overview from "./pages/Overview";
 import Primevideo from "./pages/Primevideo";
 import Error from "./pages/Error";
+// import ProtectedRoute from "./components/ProtectedRoute";
+import Details from "./pages/Details";
+import Watch from "./pages/Watch";
 
 export default function App() {
   return (
@@ -15,6 +18,8 @@ export default function App() {
         <Route path="/signin" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/" element={<Primevideo />} />
+        <Route path="/details" element={<Details />} />
+        <Route path="/watch" element={<Watch />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </Router>
