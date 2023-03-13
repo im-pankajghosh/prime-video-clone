@@ -30,7 +30,8 @@ export default function Error() {
 const Container = styled.div`
   header {
     min-height: 70vh;
-    background-color: var(--card-slider-bg-color);
+    background-color: var(--movie-list-bg-color);
+    background-image: none;
     align-items: center;
     justify-content: center;
     .content {
@@ -53,6 +54,6 @@ const Container = styled.div`
     }
   }
   footer {
-    background-color: var(--card-slider-bg-color);
+    background-color: var(--movie-list-bg-color);
   }
 `;
