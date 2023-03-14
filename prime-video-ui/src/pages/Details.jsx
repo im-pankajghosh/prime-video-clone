@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import Buttoncontrol from "../components/Buttoncontrol";
 import Footer from "../components/Footer";
@@ -10,7 +9,7 @@ import { MdOutlineCelebration } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 export default function Details(props) {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <Container>
       <Navbar />
@@ -24,7 +23,10 @@ export default function Details(props) {
         <div className="movie-details">
           <h2 className="movie-title">Farzi</h2>
           <div className="action-btn flex a-center">
-            <Buttoncontrol label="Watch with Prime" onClick={() => navigate("/watch")}/>
+            <Buttoncontrol
+              label="Watch with Prime"
+              onClick={() => navigate("/watch")}
+            />
             <button className="circuler-btn">
               <TbPlayerPlay />
             </button>
@@ -71,13 +73,34 @@ const Container = styled.div`
     justify-content: space-between;
     background-color: var(--movie-list-bg-color);
     .content {
-        cursor: default;
+      cursor: default;
       width: 100%;
       video {
         position: absolute;
         top: 0;
         right: 0;
         height: 50vh;
+      }
+      .sound-btn {
+        position: absolute;
+        right: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        border-radius: 50%;
+        background-color: #51657c;
+        color: #e0e0e0;
+        z-index: 60;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          color: #fff;
+          background-color: #6c849e;
+        }
       }
       .movie-details {
         display: flex;
@@ -146,10 +169,10 @@ const Container = styled.div`
                 width: 180px;
                 font-size: 1.1rem;
               }
-              &.cast{
+              &.cast {
                 color: var(--btn-primary-bg-color);
-                span{
-                    color: #6c849e;
+                span {
+                  color: #6c849e;
                 }
               }
             }
