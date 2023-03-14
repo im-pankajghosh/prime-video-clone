@@ -23,8 +23,24 @@
   --dropdown-menu-bg-color: #252e39;
   --dropdown-menu-item-hover-bg-color: #596c8341;
   --movie-list-bg-color: #0f171e;
-  --movie-card-bg-color : #222b38;
+  --movie-card-bg-color: #222b38;
   --footer-copyright-font-color: #8f8f8f;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+  transition: all 0.3s;
+}
+html::-webkit-scrollbar-track {
+  background-color: #222b38;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #1264a3b0;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #1264a3;
 }
 
 body {
@@ -73,8 +89,8 @@ body {
   opacity: 100% !important;
 }
 
-@media screen and (max-width:480px){
-  body{
+@media screen and (max-width: 480px) {
+  body {
     padding-top: 50px;
   }
 }
