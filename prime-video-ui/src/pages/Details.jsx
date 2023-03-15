@@ -80,6 +80,7 @@ const Container = styled.div`
         top: 0;
         right: 0;
         height: 50vh;
+        transition: all 0.5s;
       }
       .sound-btn {
         position: absolute;
@@ -105,7 +106,6 @@ const Container = styled.div`
       .movie-details {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
         gap: 20px;
         position: absolute;
         top: 0;
@@ -119,6 +119,7 @@ const Container = styled.div`
             #0f171e16
           ),
           linear-gradient(to top, var(--movie-list-bg-color) 40%, #0f171e1c);
+        transition: all 0.5s;
         .movie-title {
           font-size: 2rem;
         }
@@ -183,5 +184,42 @@ const Container = styled.div`
   }
   footer {
     background-color: var(--movie-list-bg-color);
+  }
+  @media screen and (max-width: 500px) {
+    section {
+      .content {
+        top: 0;
+        left: 0;
+        text-align: left;
+        video {
+          height: 30vh;
+        }
+        .movie-details {
+          width: 100%;
+          padding: 50px 20px;
+          background: linear-gradient(
+              to right,
+              var(--movie-list-bg-color) 32%,
+              #0f171e16
+            ),
+            linear-gradient(to top, var(--movie-list-bg-color) 60%, #0f171e1c);
+          .movie-info {
+            width: 100%;
+            .movie-cast {
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+              p {
+                font-size: 0.9rem;
+                span {
+                  width: 150px;
+                  font-size: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 `;
