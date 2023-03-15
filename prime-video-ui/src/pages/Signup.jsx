@@ -36,6 +36,7 @@ export default function Signup(props) {
           setSubmitButtonDisabled(false);
           const user = res.user;
           await updateProfile(user, { displayName: formValues.user });
+          localStorage.setItem("login",true);
           navigate("/");
         })
         .catch((err) => {
