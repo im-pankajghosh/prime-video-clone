@@ -10,7 +10,6 @@ import { TbSearch } from "react-icons/tb";
 export default function Navbar() {
   const [browseMenu, setBrowseMenu] = useState(false);
   const [userMenu, setUserMenu] = useState(false);
-  const navigate = useNavigate();
   let login = localStorage.getItem("login");
 
   return (
