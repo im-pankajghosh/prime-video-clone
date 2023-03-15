@@ -6,7 +6,7 @@ export default function Watch() {
     <Container>
       <div className="player">
         <video
-          src="https://s3.ll.videorolls.row.aiv-cdn.net/ww_sin/aa6b/9431/3dee/4abd-997d-bbe7101a55c0/8eac6d78-ca60-4de1-a200-95f325f23385_video_720p_4000kbps_audio_aaclc_128kbps.mp4"
+          src="https://s3.ll.videorolls.row.aiv-cdn.net/ww_sin/5457/a901/dd71/4b6c-8dec-ca1f7a4576ec/2da32488-50a6-4355-8386-d90fccec90e4_video_720p_4000kbps_audio_aaclc_128kbps.mp4"
           autoPlay
           controls
         />
