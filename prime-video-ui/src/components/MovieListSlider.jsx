@@ -53,21 +53,25 @@ export default function MovieListSlider(props) {
               title="Citadel"
               desc="Eight years ago, Citadel, an independent global spy agency, was destroyed by a new syndicate, Manticore. With their memories..."
             />
-            <MovieCard poster="https://m.media-amazon.com/images/S/pv-target-images/7d4343a4ca38a5d8db1226e1cbdfab7e96a0fafd948f5feced6303089d7ee352._UR1920,1080_UX400_UY225_.jpg"
-            title="Happy Family Conditions Apply"
-            desc="Happy Family: Conditions Apply is a light-hearted, family comedy which follows the lives of Dholakias, a joint-family comprisin..."
+            <MovieCard
+              poster="https://m.media-amazon.com/images/S/pv-target-images/7d4343a4ca38a5d8db1226e1cbdfab7e96a0fafd948f5feced6303089d7ee352._UR1920,1080_UX400_UY225_.jpg"
+              title="Happy Family Conditions Apply"
+              desc="Happy Family: Conditions Apply is a light-hearted, family comedy which follows the lives of Dholakias, a joint-family comprisin..."
             />
-            <MovieCard poster="https://m.media-amazon.com/images/S/pv-target-images/1daab4dad0c74436127b2fae7c765616e769cdcbc152416d2992452596714bbb._UR1920,1080_UX400_UY225_.jpg"
-            title="Breathe: Into The Shadows"
-            desc="J’s existence and ideology re-emerge as he sets out to finish what he started, leading Avinash to confront his merging dual..."
+            <MovieCard
+              poster="https://m.media-amazon.com/images/S/pv-target-images/1daab4dad0c74436127b2fae7c765616e769cdcbc152416d2992452596714bbb._UR1920,1080_UX400_UY225_.jpg"
+              title="Breathe: Into The Shadows"
+              desc="J’s existence and ideology re-emerge as he sets out to finish what he started, leading Avinash to confront his merging dual..."
             />
-            <MovieCard poster="https://images-eu.ssl-images-amazon.com/images/S/atv-aps-images/encoded/THE_BOYS_S1/en_US/COVER_ART/CLEAN/BUTCHER._UR1920,1080_UX400_UY225_.jpg"
-            title="The Boys"
-            desc="In a world where superheroes embrace the darker side of their massive celebrity and fame, THE BOYS centers on a group of..."
+            <MovieCard
+              poster="https://images-eu.ssl-images-amazon.com/images/S/atv-aps-images/encoded/THE_BOYS_S1/en_US/COVER_ART/CLEAN/BUTCHER._UR1920,1080_UX400_UY225_.jpg"
+              title="The Boys"
+              desc="In a world where superheroes embrace the darker side of their massive celebrity and fame, THE BOYS centers on a group of..."
             />
-            <MovieCard poster="https://m.media-amazon.com/images/S/pv-target-images/2ad1870c721abfd7be37b6b610c03f30f737416662b3723c9bd71dc044743d66._UR1920,1080_UX400_UY225_.jpg"
-            title="Mirzapur"
-            desc="In Mirzapur, revenge runs darker than blood. There is one title, the King of Mirzapur, but many takers. Munna feels invincible after..."
+            <MovieCard
+              poster="https://m.media-amazon.com/images/S/pv-target-images/2ad1870c721abfd7be37b6b610c03f30f737416662b3723c9bd71dc044743d66._UR1920,1080_UX400_UY225_.jpg"
+              title="Mirzapur"
+              desc="In Mirzapur, revenge runs darker than blood. There is one title, the King of Mirzapur, but many takers. Munna feels invincible after..."
             />
           </div>
           <BsChevronRight
