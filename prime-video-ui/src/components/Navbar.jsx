@@ -89,9 +89,9 @@ export default function Navbar() {
                 {/* Log out function */}
                 {login && (
                   <li >
-                    <Link className="menu-item" onClick={()=>localStorage.clear()} to="/">
+                    <a className="menu-item" onClick={()=>localStorage.clear()} href="/">
                       Sign out
-                    </Link>
+                    </a>
                   </li>
                 )}
                 <li>
