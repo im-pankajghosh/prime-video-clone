@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {useNavigate} from "react-router-dom"
 import styled from "styled-components";
 import logo from "../assets/logo.svg";
 import Modal from "./Modal";
@@ -9,6 +10,9 @@ import { TbSearch } from "react-icons/tb";
 export default function Navbar() {
   const [browseMenu, setBrowseMenu] = useState(false);
   const [userMenu, setUserMenu] = useState(false);
+  const navigate = useNavigate();
+  let login = localStorage.getItem("login");
+
   return (
     <Container>
       <nav className="flex a-center j-between">
@@ -71,13 +75,26 @@ export default function Navbar() {
             <Modal onClose={() => setUserMenu(false)}>
               <ul className="user-menu">
                 <li>
-                  <button onClick={()=>(setUserMenu(false))}><AiOutlineClose/></button>
+                  <button onClick={() => setUserMenu(false)}>
+                    <AiOutlineClose />
+                  </button>
                 </li>
-                <li>
-                  <a className="menu-item" href="/signin">
-                    Sign in
-                  </a>
-                </li>
+                {!login && (
+                  <li>
+                    <a className="menu-item" href="/signin">
+                      Sign in
+                    </a>
+                  </li>
+                )}
+
+                {/* Log out function */}
+                {login && (
+                  <li >
+                    <a className="menu-item" onClick={()=>localStorage.clear()} href="/">
+                      Sign out
+                    </a>
+                  </li>
+                )}
                 <li>
                   <a className="menu-item" href="#">
                     Watch Anywhere
@@ -169,7 +186,7 @@ const Container = styled.div`
         border-radius: 0.2rem;
         transition: 0.2s;
         li {
-          button{
+          button {
             background-color: transparent;
             color: #fff;
             padding: 1rem;
@@ -202,7 +219,7 @@ const Container = styled.div`
           height: 30px !important;
         }
       }
-      .browse-menu{
+      .browse-menu {
         top: 50px !important;
       }
       .user-menu {
@@ -213,7 +230,7 @@ const Container = styled.div`
         height: 100%;
         padding-top: 50px;
         li {
-          button{
+          button {
             display: initial !important;
             position: absolute;
             right: 0;
