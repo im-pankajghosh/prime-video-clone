@@ -95,7 +95,6 @@ const Container = styled.div`
     }
     .wrapper {
       position: relative;
-      /* border: 2px solid red; */
       .slider-arrow {
         height: 100%;
         width: 50px;
