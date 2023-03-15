@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {useNavigate} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 import styled from "styled-components";
 import logo from "../assets/logo.svg";
 import Modal from "./Modal";
@@ -80,18 +80,18 @@ export default function Navbar() {
                 </li>
                 {!login && (
                   <li>
-                    <a className="menu-item" href="/signin">
+                    <Link className="menu-item" to="/signin">
                       Sign in
-                    </a>
+                    </Link>
                   </li>
                 )}
 
                 {/* Log out function */}
                 {login && (
                   <li >
-                    <a className="menu-item" onClick={()=>localStorage.clear()} href="/">
+                    <Link className="menu-item" onClick={()=>localStorage.clear()} to="/">
                       Sign out
-                    </a>
+                    </Link>
                   </li>
                 )}
                 <li>
