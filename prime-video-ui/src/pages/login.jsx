@@ -9,9 +9,11 @@ import Buttoncontrol from "../components/Buttoncontrol";
 import Inputcontrol from "../components/Inputcontrol";
 
 export default function Login(props) {
+
   const navigate = useNavigate();
   const [errorMsg, setErrorMsg] = useState("");
   const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
+  
 
   const [formValues, setFormValues] = useState({
     email: "",
@@ -32,6 +34,7 @@ export default function Login(props) {
       )
         .then((res) => {
           setSubmitButtonDisabled(false);
+          localStorage.setItem("login",true);
           navigate("/");
         })
         .catch((err) => {
