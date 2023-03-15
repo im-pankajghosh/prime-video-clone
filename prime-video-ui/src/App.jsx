@@ -16,11 +16,8 @@ export default function App() {
         <Route path="/signin" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/" element={<Home />} />
-        <Route
-          path="/details"
-          element={<ProtectedRoute component={Details} />}
-        />
-        <Route path="/watch" element={<ProtectedRoute component={Watch} />} />
+        <Route path="/details" element={<ProtectedRoute Component={Details} />} />
+        <Route path="/watch" element={<ProtectedRoute Component={Watch} />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </Router>
